@@ -1,6 +1,6 @@
 # Final project for the subject: Web development and inclusive design (DAFE1200), at OsloMet
 
-The assignment consisted of chosing one of the UN Sustainable Development Goals and then invent a potential solution to the problem.
+The assignment consisted of choosing one of the UN Sustainable Development Goals and then invent a potential solution to the problem.
 Further on to create a website that:
   - Explains why the problem is important from a social or technological perspective
   - How the problem relates to the solution that you have identified
