@@ -1,0 +1,100 @@
+/* DROPDOWN */
+
+/* Main Container */
+.drop-down-container {
+  padding: 50px;
+  padding-top: 0px;
+  max-width: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Category title styles */
+.drop-down-category-title {
+  padding-top: 50px;
+  text-align: center;
+  color: var(--dark-green);
+}
+
+/* Accordion styles */
+.accordion {
+  outline: 0;
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 25px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+.accordion:hover {
+  background-color: whitesmoke;
+}
+.accordion:focus {
+  border: 5px solid #2f514b;
+}
+.accordion:after {
+  content: "\002B";
+  color: var(--dark-green);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Panel styles */
+.panel {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0 18px;
+  max-height: 0;
+  background-color: whitesmoke;
+  font-size: 15px;
+  display: block;
+  overflow: hidden;
+
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.panel-open {
+  max-height: 5000vh; /* should expand to as big as it can be, to achieve an animation it needs to use the max-height property */
+  padding: 18px 18px;
+}
+.panel p {
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--black);
+}
+
+/* Active classes for when the accordion is open */
+.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.active:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .drop-down-container {
+    padding: 25px;
+    padding-top: 0px;
+  }
+  .drop-down-category-title {
+    padding-top: 25px;
+  }
+}

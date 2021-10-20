@@ -1,0 +1,136 @@
+/* IMAGE TEXT ROW */
+
+/* Main container */
+.img-text-row-container {
+  padding: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.reverse {
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+/* Image styles */
+.img-text-row-container img {
+  width: 50%;
+  max-width: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.img-text-row-container .mockup {
+  width: 60%;
+  max-width: 350px;
+}
+.img-text-row-container .small-img {
+  width: 40%;
+  max-width: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Text container style */
+.img-text-row-container .text {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Title styles */
+.img-text-row-container .text h1 {
+  color: var(--dark-green);
+  padding-bottom: 25px;
+  text-align: left;
+}
+.img-text-row-container .text h3 {
+  color: var(--dark-green);
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+/* Paragraph style */
+.img-text-row-container .text p {
+  text-align: left;
+  max-width: 650px;
+  padding-bottom: 25px;
+  line-height: 30px;
+}
+
+/* Nested button style */
+.img-text-row-container .text .button {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tablet layout */
+@media screen and (max-width: 1100px) {
+  .img-text-row-container {
+    padding: 50px;
+    padding-top: 0;
+  }
+
+  .img-text-row-container .text h1,
+  .img-text-row-container .text h3 {
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  .img-text-row-container img {
+    width: 60%;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+
+  .img-text-row-container .text {
+    padding: 0;
+  }
+
+  .img-text-row-container .mockup {
+    width: 80%;
+    max-width: 450px;
+  }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+  .img-text-row-container {
+    padding: 25px;
+    padding-top: 0;
+  }
+}
+
+.text .arrow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.text .arrow-icon {
+  margin-top: 7px;
+  padding: 0;
+  height: 15px;
+  width: 15px;
+}
+
+.text .arrow-container p {
+  margin-left: 5px;
+}

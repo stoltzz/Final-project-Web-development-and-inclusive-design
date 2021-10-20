@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character set -->
+  <meta charset="UTF-8" />
+
+  <!-- Scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Website title -->
+  <title>cFood</title>
+
+  <!-- Website favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+
+  <!-- CSS imports -->
+  <link rel="stylesheet" href="../assets/css/nav.css" />
+  <link rel="stylesheet" href="../assets/css/footer.css" />
+  <link rel="stylesheet" href="../assets/css/bg-img-layout.css" />
+  <link rel="stylesheet" href="../assets/css/img-text-row.css" />
+  <link rel="stylesheet" href="../assets/css/title-btn-paragraph.css" />
+  <link rel="stylesheet" href="../assets/css/button.css" />
+  <link rel="stylesheet" href="../assets/css/global-styles.css" />
+  <noscript>
+    <link rel="stylesheet" href="../assets/css/noscript.css" />
+  </noscript>
+
+  <!-- Import fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAV START -->
+  <nav>
+    <a href="index.html">
+      <div class="nav-logo">
+        <img src="../assets/img/nav-logo.png" alt="nav logo" />
+        <h1>cFood</h1>
+      </div>
+    </a>
+
+    <div class="links">
+      <div class="link">
+        <a href="challenge.html">Challenge</a>
+      </div>
+
+      <div class="link">
+        <a href="solution.html">Solution</a>
+      </div>
+
+      <div class="link">
+        <a class="active" href="app.html">Our App</a>
+      </div>
+
+      <div>
+        <a href="../app.html"><img class="flag-icon" src="../assets/img/icons/norwegian-flag.png"
+            alt="norwegian flag" /></a>
+      </div>
+    </div>
+
+    <img class="hamburger" src="../assets/img/icons/menu.png" alt="hamburger menu" />
+  </nav>
+  <!-- NAV END -->
+
+  <main>
+    <!-- FULLSCREEN BACKGROUND IMAGE SECTION START -->
+    <section class="fs-bg-container app">
+      <div class="fs-bg-img"></div>
+      <div class="fs-bg-img-2 fs-bg-img-2-en"></div>
+
+      <a href="#content" class="fs-bg-scroll-down">
+        <p>Scroll down</p>
+        <img src="../assets/img/icons/arrow-down-white.png" alt="arrow down" />
+      </a>
+    </section>
+    <!-- FULLSCREEN BACKGROUND IMAGE SECTION END -->
+
+    <div id="content" class="scroll"></div> <!-- scroll to a navbar offset div -->
+    <!-- APP MOCKUP MY PAGE START  -->
+    <section class="img-text-row-container p-top-50">
+      <img class="mockup" src="../assets/img/mockups/en/home.png" alt="app home page" />
+
+      <div class="text">
+        <h1 tabindex="0">Home Page</h1>
+
+        <p>
+          The home page shows an overview of your consumption with a score, where you will see how you are doing
+          on a scale. You get daily tips and challenges on how to become more sustainable.
+        </p>
+
+        <p class="p-bottom-0">
+          You will receive coupons if you complete the challenges; these can be found at the top left. Based on previous
+          purchases, you will be recommended sustainable products that will help you on the path to a more
+          sustainable life.
+        </p>
+      </div>
+    </section>
+    <!-- APP MOCKUP MY PAGE END  -->
+
+    <!-- APP MOCKUP PRODUCT DETAILS START  -->
+    <section class="img-text-row-container reverse">
+      <div class="text">
+        <h1 tabindex="0">Product Details
+        </h1>
+
+        <p>
+          In the application you will find a page with an overview of how sustainable the product is.
+          cFood compares products on several different parameters and gives a score in the form of a smiley face.
+        </p>
+
+        <p class="p-bottom-0">
+          The overview shows the environmental impact, the packaging used, the ecology, and ethics behind the
+          product. By clicking on a category, you can see detailed information for how the scores are calculated.
+        </p>
+      </div>
+
+      <img class="mockup" src="../assets/img/mockups/en/product-details.png" alt="app product details page" />
+    </section>
+    <!-- APP MOCKUP PRODUCT DETAILS END  -->
+
+    <!-- APP MOCKUP SEARCH START  -->
+    <section class="img-text-row-container">
+      <img class="mockup" src="../assets/img/mockups/en/search.png" alt="app search page" />
+
+      <div class="text">
+        <h1 tabindex="0">Search or Scan</h1>
+
+        <p>
+          In the bottom middle tab bar of the application, you will find a separate search page. You can search for the
+          item
+          you are looking for to get more information about the product and how sustainable it is.
+        </p>
+
+        <p class="p-bottom-0">
+          An alternative to searching for the product is to scan the product's barcode.
+        </p>
+      </div>
+    </section>
+    <!-- APP MOCKUP SEARCH END  -->
+
+    <!-- APP MOCKUP RECEIPTS START  -->
+    <section class="img-text-row-container reverse p-bottom-50">
+      <div class="text">
+        <h1 tabindex="0">Receipts</h1>
+
+        <p>
+          cFood can be connected to Rema 1000's Æ, Coop's app and Norgesgruppen's Trump to see previous purchases.
+          This makes it easy for you to see the footprint of previous purchases without searching all the products
+          themselves.
+        </p>
+
+        <p class="p-bottom-0">
+          By clicking on a product in the receipt, you can get more info about the product and an in-depth description
+          of its sustainability.
+        </p>
+      </div>
+
+      <img class="mockup" src="../assets/img/mockups/en/receipts.png" alt="app receipts page" />
+    </section>
+    <!-- APP MOCKUP RECEIPTS END  -->
+
+    <!-- FAQ BUTTON START  -->
+    <div class="title-btn-paragraph-container p-top-0">
+      <a href="index.html#faq" class="button green-btn m-top-0">Have any questions?
+      </a>
+    </div>
+    <!-- FAQ BUTTON END  -->
+  </main>
+
+  <!-- SCROLL TO TOP BUTTON START -->
+  <button onclick="scollToTop()" class="button scroll-to-top-btn">
+    <img src="../assets/img/icons/arrow-down-white.png" alt="arrow up" />
+  </button>
+  <!-- SCROLL TO TOP BUTTON END -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <a href="privacy.html" class="button white-btn">Privacy & Terms</a>
+    <div class="company-name"><span>&#169; </span> cFood 2020</div>
+    <a href="sources.html" class="button white-btn">
+      Sources <img src="../assets/img/icons/sources-green.png" alt="sources icon" />
+    </a>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- JAVASCRIPT IMPORTS START -->
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/bg-img-layout.js"></script>
+  <script src="../assets/js/scroll-to-top.js"></script>
+  <!-- JAVASCRIPT IMPORTS END -->
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+  <!-- Character set -->
+  <meta charset="UTF-8" />
+
+  <!-- Scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Website title -->
+  <title>cFood</title>
+
+  <!-- Website favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+  <!-- CSS imports -->
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/bg-img-layout.css" />
+  <link rel="stylesheet" href="assets/css/title-btn-paragraph.css" />
+  <link rel="stylesheet" href="assets/css/img-text-row.css" />
+  <link rel="stylesheet" href="assets/css/button.css" />
+  <link rel="stylesheet" href="assets/css/global-styles.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+
+  <!-- Import fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAV START -->
+  <nav>
+    <a href="index.html">
+      <div class="nav-logo">
+        <img src="assets/img/nav-logo.png" alt="nav logo" />
+        <h1>cFood</h1>
+      </div>
+    </a>
+
+    <div class="links">
+      <div class="link">
+        <a href="challenge.html">Utfordring</a>
+      </div>
+
+      <div class="link">
+        <a class="active" href="solution.html">Løsning</a>
+      </div>
+
+      <div class="link">
+        <a href="app.html">Appen</a>
+      </div>
+
+      <div>
+        <a href="en/solution.html"><img class="flag-icon" src="assets/img/icons/english-flag.png"
+            alt="engelsk flagg" /></a>
+      </div>
+    </div>
+
+    <img class="hamburger" src="assets/img/icons/menu.png" alt="hamburger meny" />
+  </nav>
+  <!-- NAV END -->
+
+  <main>
+    <!-- FULLSCREEN BACKGROUND IMAGE SECTION START -->
+    <section class="fs-bg-container solution">
+      <div class="fs-bg-img"></div>
+      <h2 class="fs-bg-title">
+        «Vær oppmerksom på hva du kjøper, og velg et bærekraftig alternativ når det er mulig»
+        <br>
+        <a class="author-link" href="sources.html#literature">(De forente nasjoner, 2020)</a>
+      </h2>
+      <a href="#content" class="fs-bg-scroll-down">
+        <p>Scroll ned</p>
+        <img src="assets/img/icons/arrow-down-white.png" alt="pil ned" />
+      </a>
+    </section>
+    <!-- FULLSCREEN BACKGROUND IMAGE SECTION END -->
+
+    <div id="content" class="scroll"></div> <!-- scroll to a navbar offset div -->
+    <!-- SECTION 1 START -->
+    <section class="full-height-nav">
+      <div class="title-btn-paragraph-container">
+        <h1>«Bærekraftig opplysning for alle»</h1>
+        <p>
+          cFood gir forbrukere oversikt og veiledning til mer bærekraftig konsum
+          ved å bytte ut enkelte matvarer mot alternativer med lavere
+          fotavtrykk. Produktene vurderes på forskjellige parametere i fire kategorier:
+        </p>
+      </div>
+
+      <div class="img-text-row-container ">
+        <img class="small-img" src="assets/img/decorative/environmental-impact.svg" alt="Tegning av en syk planet" />
+
+        <div class="text">
+          <h3>Miljøbelastning</h3>
+
+          <p class="p-bottom-0">
+            Totalt CO<sub>2</sub> utslipp fra varens produksjon og transport, vannforbruk
+            og arealforbruk. <a class="link-green" href="sources.html#literature">(Lindahl, 2017)</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="img-text-row-container p-top-25">
+        <img class="small-img" src="assets/img/decorative/ecology.svg" alt="Tegning av åker" />
+
+        <div class="text">
+          <h3>Økologi</h3>
+
+          <p class="p-bottom-0">
+            Basert på produksjonsfaktorer som bruk av syntetiske plantevernmidler
+            og kunstgjødsel. Vi benytter oss av bakenforliggende fakta fra eksisterende
+            merking, eksempelvis Debios Ø-merke.
+            <a class="link-green" href="sources.html#literature">(Forbrukerrådet, 2020)</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="img-text-row-container p-top-25">
+        <img class="small-img" src="assets/img/decorative/ethics.svg" alt="Tegning av engel og djevel" />
+
+        <div class="text">
+          <h3>Etikk</h3>
+
+          <p class="p-bottom-0">
+            Hvorvidt arbeidere og dyr behandles på en verdig måte. Tar utgangspunkt
+            i merking, som for eksempel Fairtrade og Dyrevernmerket.
+            <a class="link-green" href="sources.html#literature">(Forbrukerrådet, 2020)</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="img-text-row-container p-top-25 p-bottom-0">
+        <img class="small-img" src="assets/img/decorative/recycle.svg" alt="Tegning av en ku" />
+
+        <div class="text">
+          <h3>Resirkulering</h3>
+
+          <p class="p-bottom-0">
+            En sammenligning av ulik emballasje på lignende produkter, og
+            produktenes muligheter for resirkulering. Basert på merking fra
+            Grønt Punkt Norge.
+            <a class="link-green" href="sources.html#literature">(Forbrukerrådet, 2020)</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="title-btn-paragraph-container">
+        <a href="#read-more" class="button green-btn m-top-0">Les mer
+          <img src="assets/img/icons/arrow-down-white.png" alt="pil ned" /></a>
+      </div>
+    </section>
+    <!-- SECTION 1 END -->
+
+    <div id="read-more" class="scroll"></div> <!-- scroll to a navbar offset div -->
+    <!-- SECTION 2 START -->
+    <section class="full-height-nav-footer">
+      <div class="img-text-row-container">
+        <img src="assets/img/decorative/money-plant-solution.png"
+          alt="Tegning av en potteplante med en blomst og dollar-symbol" />
+
+        <div class="text">
+          <h1>Du sparer penger, sammen beskytter vi miljøet</h1>
+
+          <p>
+            Vi gir deg enda en god grunn for å komme i gang med vår løsning:
+            Du kan spare penger. Appen gir deg utfordringer
+            basert på ditt forbruk. Dersom du klarer utfordringene blir du
+            belønnet med rabattkuponger på matvarer, som naturligvis er
+            bærekraftige.
+          </p>
+
+          <p class="p-bottom-0">
+            <span class="weighted-text">cFood</span> gir deg de beste
+            <span class="weighted-text">insentivene</span>:
+          </p>
+
+          <div class="arrow-container">
+            <img class="arrow-icon" src="assets/img/icons/right-arrow.svg" alt="høyre pil" />
+            <p class="p-bottom-0">Reduser ditt fotavtrykk</p>
+          </div>
+
+          <div class="arrow-container">
+            <img class="arrow-icon" src="assets/img/icons/right-arrow.svg" alt="høyre pil" />
+            <p class="p-bottom-0">
+              Bidra til å forme en mer bærekraftig matindustri
+            </p>
+          </div>
+
+          <div class="arrow-container p-bottom-25">
+            <img class="arrow-icon" src="assets/img/icons/right-arrow.svg" alt="høyre pil" />
+            <p class="p-bottom-0">Spar penger gjennom rabattkuponger</p>
+          </div>
+
+          <a href="app.html" class="button green-btn">Les om appen</a>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION 2 END -->
+  </main>
+
+  <!-- SCROLL TO TOP BUTTON START -->
+  <button onclick="scollToTop()" class="button scroll-to-top-btn">
+    <img src="assets/img/icons/arrow-down-white.png" alt="pil opp" />
+  </button>
+  <!-- SCROLL TO TOP BUTTON END -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <a href="privacy.html" class="button white-btn">Personvern & vilkår</a>
+    <div class="company-name"><span>&#169; </span> cFood 2020</div>
+    <a href="sources.html" class="button white-btn">
+      Kilder <img src="assets/img/icons/sources-green.png" alt="kilde ikon" />
+    </a>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- JAVASCRIPT IMPORTS START -->
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/bg-img-layout.js"></script>
+  <script src="assets/js/scroll-to-top.js"></script>
+  <!-- JAVASCRIPT IMPORTS END -->
+</body>
+
+</html>

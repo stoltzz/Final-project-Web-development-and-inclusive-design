@@ -1,0 +1,80 @@
+/* BUTTONS */
+
+/* General button styles */
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+/* White button */
+.white-btn {
+  background-color: var(--white);
+  color: var(--dark-green);
+}
+
+/* Green button */
+.green-btn {
+  background-color: var(--dark-green);
+  color: var(--white);
+}
+
+/* Nested image in the green or white button */
+.white-btn img,
+.green-btn img {
+  width: 16px;
+  margin-left: 5px;
+}
+
+/* Scroll to top button */
+.scroll-to-top-btn {
+  opacity: 0;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 2.5vh;
+  right: 25px;
+  z-index: 10;
+  border: 3px solid #fff;
+  background-color: var(--dark-green);
+  cursor: pointer;
+  outline: none;
+}
+.scroll-to-top-btn img {
+  width: 30px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* Hide scroll to top button on mobile devices, it's redundant since it's a built in feature on mobile devices and it would cover up content */
+@media screen and (max-width: 768px) {
+  .scroll-to-top-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character set -->
+  <meta charset="UTF-8" />
+
+  <!-- Scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Website title -->
+  <title>cFood</title>
+
+  <!-- Website favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+
+  <!-- CSS imports -->
+  <link rel="stylesheet" href="../assets/css/nav.css" />
+  <link rel="stylesheet" href="../assets/css/footer.css" />
+  <link rel="stylesheet" href="../assets/css/button.css" />
+  <link rel="stylesheet" href="../assets/css/drop-down.css" />
+  <link rel="stylesheet" href="../assets/css/index-bg.css" />
+  <link rel="stylesheet" href="../assets/css/global-styles.css" />
+  <noscript>
+    <link rel="stylesheet" href="../assets/css/noscript.css" />
+  </noscript>
+
+  <!-- Import fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAV START -->
+  <nav>
+    <a href="index.html">
+      <div class="nav-logo">
+        <img src="../assets/img/nav-logo.png" alt="nav logo" />
+        <h1>cFood</h1>
+      </div>
+    </a>
+
+    <div class="links">
+      <div class="link">
+        <a href="challenge.html">Challenge</a>
+      </div>
+
+      <div class="link">
+        <a href="solution.html">Solution</a>
+      </div>
+
+      <div class="link">
+        <a href="app.html">Our App</a>
+      </div>
+
+      <div>
+        <a href="../index.html"><img class="flag-icon" src="../assets/img/icons/norwegian-flag.png"
+            alt="norwegian flag" /></a>
+      </div>
+    </div>
+
+    <img class="hamburger" src="../assets/img/icons/menu.png" alt="hamburger menu" />
+  </nav>
+  <!-- NAV END -->
+
+  <main>
+    <!-- INDEX BG SECTION START -->
+    <section class="index-bg">
+      <div class="sections">
+        <div class="section-challenge">
+          <div class="section-content">
+            <img src="../assets/img/decorative/index-challenge.png" alt="Drawing of factory" />
+
+            <div class="section-text">
+              <h1>Challenge</h1>
+              <p>
+                The negative effects of food production must be limited. How can we, as consumers, contribute, and is
+                it easy to make the right choices?
+              </p>
+
+              <a href="challenge.html" class="button green-btn">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-solution">
+          <div class="section-content">
+            <img src="../assets/img/decorative/index-solution.png" alt="drawing of a planet" />
+
+            <div class="section-text">
+              <h1>Solution</h1>
+              <p>
+                We limit food production's footprint by helping consumers make sustainable choices and influence the
+                industry in the right direction.
+              </p>
+
+              <a href="solution.html" class="button green-btn">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-app">
+          <div class="section-content">
+            <img src="../assets/img/decorative/index-app.png" alt="drawing of a mobile with a heart on the screen" />
+
+            <div class="section-text">
+              <h1>Our App</h1>
+              <p>
+                cFood displays information about food footprints and gives you suggestions on alternative items, tips,
+                and challenges to reduce your footprint.
+              </p>
+
+              <a href="app.html" class="button green-btn">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down-faq-container">
+        <a href="#faq" class="button white-btn">Do you still have questions?
+          <img src="../assets/img/icons/arrow-down-green.png" alt="arrow down" /></a>
+      </div>
+    </section>
+    <!-- INDEX BG SECTION END -->
+
+    <div id="faq" class="scroll"></div> <!-- scroll to a navbar offset div -->
+    <!-- FAQ SECTION START -->
+    <section class="faq-section">
+      <div class="drop-down-container">
+        <h2 class="drop-down-category-title">Frequently Asked Questions</h2>
+
+        <div class="sources-drop-down-content">
+          <button class="accordion">What is cFood?</button>
+          <div class="panel">
+            <p>
+              cFood is an app that informs consumers simply and understandably about various foods' footprint.
+            </p>
+          </div>
+        </div>
+
+        <div class="sources-drop-down-content">
+          <button class="accordion">How does the app work?</button>
+          <div class="panel">
+            <p>
+              The user can scan or search for food, or review previous purchases with integration to Æ, Coop,
+              and Trumf. The footprint of various foods is categorized with smiley faces for easy understanding.
+            </p>
+          </div>
+        </div>
+
+        <div class="sources-drop-down-content">
+          <button class="accordion">Where is the app available?</button>
+          <div class="panel">
+            <p>
+              The app is still under development and will be available for iOS and Android during 2020. You can see how
+              the app works
+              <a class="underline-link" href="app.html">here</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="sources-drop-down-content">
+          <button class="accordion">
+            Can I trust cFood?
+          </button>
+          <div class="panel">
+            <p>
+              cFood is an information and dissemination tool. Therefore, it is our responsibility to be objective, and
+              we only use reliable data and standardized classification and labeling to achieve this. You can be assured
+              that we will help you make the right choices.
+            </p>
+          </div>
+        </div>
+
+        <div class="sources-drop-down-content">
+          <button class="accordion">
+            How do you handle user privacy?
+          </button>
+          <div class="panel">
+            <p>
+              We only use your information to direct the app towards your choices. We do not cooperate with any food
+              producers and do not want to advertise for particular products. Our vision is to be a communicator of
+              knowledge that makes sustainable choices more accessible to the public. Read more about privacy
+              <a class="underline-link" href="privacy.html">here</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="sources-drop-down-content">
+          <button class="accordion">
+            How can one person make a difference?
+          </button>
+          <div class="panel">
+            <p>
+              The 10 % richest in the world account for 50 % of the world's emissions <a class="link-green"
+                href="sources.html#literature">(Gore, 2015)</a>. If we together make a lifestyle change,
+              we will significantly reduce global emissions. We want to
+              inform people so that individuals' actions collectively can create
+              large reductions in emissions.
+            </p>
+          </div>
+        </div>
+
+        <div class="sources-drop-down-content">
+          <button class="accordion">
+            How do you help reduce greenwashing?
+          </button>
+          <div class="panel">
+            <p>
+              We want to create a more transparent production chain by informing consumers with empirical and fact-based
+              information. Ambiguous concepts such as green products are cross-checked against empirical data in a
+              simple and clear way.
+            </p>
+          </div>
+        </div>
+
+        <div class="sources-drop-down-content">
+          <button class="accordion">
+            How can I use my collected coupons?
+          </button>
+          <div class="panel">
+            <p>
+              In our application you get challenges and rewards in the form of coupons you can use in various stores.
+              You can use these coupons whenever you want as long as they have not expired. You use them by clicking on
+              the coupon in the application; then, you will get a barcode. You scan this in the store at checkout.
+            </p>
+          </div>
+        </div>
+
+        <div class="sources-drop-down-content">
+          <button class="accordion">
+            How can I help spread knowledge about sustainable consumption?
+          </button>
+          <div class="panel">
+            <p>
+              We are always open to spreading useful information to more recipients! If you want to cooperate with us,
+              you can send an email to post@cfood.no to get in touch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ SECTION END -->
+  </main>
+
+  <!-- SCROLL TO TOP BUTTON START -->
+  <button onclick="scollToTop()" class="button scroll-to-top-btn">
+    <img src="../assets/img/icons/arrow-down-white.png" alt="arrow up" />
+  </button>
+  <!-- SCROLL TO TOP BUTTON END -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <a href="privacy.html" class="button white-btn">Privacy & Terms</a>
+    <div class="company-name"><span>&#169; </span> cFood 2020</div>
+    <a href="sources.html" class="button white-btn">
+      Sources <img src="../assets/img/icons/sources-green.png" alt="sources icon" />
+    </a>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- JAVASCRIPT IMPORTS START -->
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/drop-down.js"></script>
+  <script src="../assets/js/scroll-to-top.js"></script>
+  <!-- JAVASCRIPT IMPORTS END -->
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+/* GLOBAL STYLES */
+
+/* Defining the color palette in CSS variables */
+:root {
+  --white: #fff;
+  --black: #222224;
+  --light-green: #b0d6cf;
+  --dark-green: #2f514b;
+}
+
+/* Reset padding and margin for all HTML elements and standardize box sizing */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for supported browsers */
+}
+
+body {
+  color: var(--black); /* set default color for all elements */
+  font-family: "Montserrat", sans-serif; /* set default font */
+  background-color: var(--white);
+}
+
+/* LINK STYLES FOR SOURCES AND DIRECT LINKS */
+a {
+  text-decoration: none;
+}
+
+.link-white {
+  color: var(--white);
+}
+
+.link-white:hover {
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
+.link-green {
+  color: var(--dark-green);
+}
+
+.link-green:hover {
+  color: var(--dark-green);
+  text-decoration: underline;
+}
+
+.underline-link {
+  text-decoration: underline;
+  color: var(--black);
+}
+
+.underline-link-img {
+  width: 16px;
+  height: 16px;
+}
+
+.underline-link:hover {
+  color: var(--dark-green);
+}
+
+.box-links {
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 30px;
+}
+
+.author-link {
+  font-style: italic;
+  font-size: 75%;
+  color: white;
+}
+
+.author-link:hover {
+  text-decoration: underline;
+}
+
+/* BOLD STYLE FOR TEXT ELEMENTS */
+.weighted-text {
+  color: var(--dark-green);
+  font-weight: bold;
+}
+.weighted-text-black {
+  font-weight: bold;
+}
+
+/* Offset the navbar height */
+.scroll {
+  position: absolute;
+  -webkit-transform: translateY(-10vh);
+  -ms-transform: translateY(-10vh);
+  transform: translateY(-10vh);
+}
+
+/* SECTION STYLES */
+.full-height-nav,
+.full-height-nav-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.full-height-nav {
+  min-height: 90vh;
+}
+
+.full-height-nav-footer {
+  min-height: 80vh;
+  border-top: 1px solid lightgray;
+}
+
+.faq-section {
+  width: 100%;
+}
+
+/* SPACING (always overwrite existing styles) */
+.m-top-0 {
+  margin-top: 0 !important;
+}
+
+.m-top-25 {
+  margin-top: 25px !important;
+}
+
+.p-top-0 {
+  padding-top: 0 !important;
+}
+
+.p-top-25 {
+  padding-top: 25px !important;
+}
+
+.p-top-50 {
+  padding-top: 50px !important;
+}
+
+.p-bottom-0 {
+  padding-bottom: 0 !important;
+}
+
+.p-bottom-25 {
+  padding-bottom: 25px !important;
+}
+
+.p-bottom-50 {
+  padding-bottom: 50px !important;
+}

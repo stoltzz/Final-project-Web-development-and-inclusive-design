@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+  <!-- Character set -->
+  <meta charset="UTF-8" />
+
+  <!-- Scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Website title -->
+  <title>cFood</title>
+
+  <!-- Website favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+  <!-- CSS imports -->
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/bg-img-layout.css" />
+  <link rel="stylesheet" href="assets/css/img-text-row.css" />
+  <link rel="stylesheet" href="assets/css/title-btn-paragraph.css" />
+  <link rel="stylesheet" href="assets/css/button.css" />
+  <link rel="stylesheet" href="assets/css/global-styles.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+
+  <!-- Import fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAV START -->
+  <nav>
+    <a href="index.html">
+      <div class="nav-logo">
+        <img src="assets/img/nav-logo.png" alt="nav logo" />
+        <h1>cFood</h1>
+      </div>
+    </a>
+
+    <div class="links">
+      <div class="link">
+        <a href="challenge.html">Utfordring</a>
+      </div>
+
+      <div class="link">
+        <a href="solution.html">Løsning</a>
+      </div>
+
+      <div class="link">
+        <a class="active" href="app.html">Appen</a>
+      </div>
+
+      <div>
+        <a href="en/app.html"><img class="flag-icon" src="assets/img/icons/english-flag.png" alt="engelsk flagg" /></a>
+      </div>
+    </div>
+
+    <img class="hamburger" src="assets/img/icons/menu.png" alt="hamburger meny" />
+  </nav>
+  <!-- NAV END -->
+
+  <main>
+    <!-- FULLSCREEN BACKGROUND IMAGE SECTION START -->
+    <section class="fs-bg-container app">
+      <div class="fs-bg-img"></div>
+      <div class="fs-bg-img-2 fs-bg-img-2-no"></div>
+
+      <a href="#content" class="fs-bg-scroll-down">
+        <p>Scroll ned</p>
+        <img src="assets/img/icons/arrow-down-white.png" alt="pil ned" />
+      </a>
+    </section>
+    <!-- FULLSCREEN BACKGROUND IMAGE SECTION END -->
+
+    <div id="content" class="scroll"></div> <!-- scroll to a navbar offset div -->
+    <!-- APP MOCKUP MY PAGE START  -->
+    <section class="img-text-row-container p-top-50">
+      <img class="mockup m-top-0" src="assets/img/mockups/no/home.png" alt="cFood-appens hjemside" />
+
+      <div class="text">
+        <h1 tabindex="0">Min side</h1>
+
+        <p>
+          Min side viser en oversikt over forbruket ditt med en score, hvor du
+          vil kunne se hvordan du ligger an på en skala. Du får daglige tips og
+          utfordringer om hvordan du kan bli mer bærekraftig.
+        </p>
+
+        <p class="p-bottom-0">
+          Du vil motta kuponger dersom du klarer utfordringene, disse finner du
+          øverst til venstre. Basert på tidligere handler får du anbefalt
+          bærekraftige produkter som vil hjelpe deg på veien til et mer
+          bærekraftig liv.
+        </p>
+      </div>
+    </section>
+    <!-- APP MOCKUP MY PAGE END  -->
+
+    <!-- APP MOCKUP PRODUCT DETAILS START  -->
+    <section class="img-text-row-container reverse">
+      <div class="text">
+        <h1 tabindex="0">Produktdetaljer</h1>
+
+        <p>
+          I applikasjonen er det en side med oversikt over hvor bærekraftig
+          produktet er. cFood sammenligner produkter med en rekke forskjellige
+          parametere og gir en score i form av et smilefjes.
+        </p>
+
+        <p class="p-bottom-0">
+          Du får en oversikt over miljøbelastningen, emballasjen som er brukt,
+          økologien og etikken bak produktet. Ved å trykke på en kategori kan du
+          se mer informasjon om hvordan poengsummene beregnes.
+        </p>
+      </div>
+
+      <img class="mockup" src="assets/img/mockups/no/product-details.png" alt="cFood-appens produktside" />
+    </section>
+    <!-- APP MOCKUP PRODUCT DETAILS END  -->
+
+    <!-- APP MOCKUP SEARCH START  -->
+    <section class="img-text-row-container">
+      <img class="mockup" src="assets/img/mockups/no/search.png" alt="cFood-appens søkeside" />
+
+      <div class="text">
+        <h1 tabindex="0">Søke eller skanne</h1>
+
+        <p>
+          I menylinjen nederst i applikasjonen vil du finne en egen søk-side.
+          Her kan du søke på den varen du er ute etter for å få mer informasjon
+          om produktet og hvor bærekraftig det er.
+        </p>
+
+        <p class="p-bottom-0">
+          Alternativt til å søke opp varen kan du skanne strekkoden for å finne informasjon om produktet.
+        </p>
+      </div>
+    </section>
+    <!-- APP MOCKUP SEARCH END  -->
+
+    <!-- APP MOCKUP RECEIPTS START  -->
+    <section class="img-text-row-container reverse p-bottom-50">
+      <div class="text">
+        <h1 tabindex="0">Kvitteringer</h1>
+
+        <p>
+          cFood kan kobles opp mot Rema 1000s Æ, Coops app og Norgesgruppens
+          Trumf-ordning for å se tidligere kjøp. Dette gjør det enkelt for deg å
+          se fotavtrykket til tidligere handler uten å selv måtte søke opp alle
+          produktene.
+        </p>
+
+        <p class="p-bottom-0">
+          Ved å trykke på et produkt i en kvittering får du opp mer info
+          om produktet og en utdypende beskrivelse av produktets bærekraft.
+        </p>
+      </div>
+
+      <img class="mockup" src="assets/img/mockups/no/receipts.png" alt="cFood-appens kvitteringsside" />
+    </section>
+    <!-- APP MOCKUP RECEIPTS END  -->
+
+    <!-- FAQ BUTTON START  -->
+    <div class="title-btn-paragraph-container p-top-0">
+      <a href="index.html#faq" class="button green-btn m-top-0">Lurer du på noe?
+      </a>
+    </div>
+    <!-- FAQ BUTTON END  -->
+  </main>
+
+  <!-- SCROLL TO TOP BUTTON START -->
+  <button onclick="scollToTop()" class="button scroll-to-top-btn">
+    <img src="assets/img/icons/arrow-down-white.png" alt="pil opp" />
+  </button>
+  <!-- SCROLL TO TOP BUTTON END -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <a href="privacy.html" class="button white-btn">Personvern & vilkår</a>
+    <div class="company-name"><span>&#169; </span> cFood 2020</div>
+    <a href="sources.html" class="button white-btn">
+      Kilder <img src="assets/img/icons/sources-green.png" alt="kilde ikon" />
+    </a>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- JAVASCRIPT IMPORTS START -->
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/bg-img-layout.js"></script>
+  <script src="assets/js/scroll-to-top.js"></script>
+  <!-- JAVASCRIPT IMPORTS END -->
+</body>
+
+</html>

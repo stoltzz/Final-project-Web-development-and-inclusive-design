@@ -1,0 +1,40 @@
+/* TITLE, BUTTON, PARAGRAPH */
+
+/* Main container */
+.title-btn-paragraph-container {
+  padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Title */
+.title-btn-paragraph-container h1 {
+  text-align: center;
+  color: var(--dark-green);
+  margin-bottom: 25px;
+  line-height: 35px;
+}
+
+/* Button */
+.title-btn-paragraph-container .button {
+  margin-top: 25px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Paragraph */
+.title-btn-paragraph-container p {
+  line-height: 30px;
+  text-align: left;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+  .title-btn-paragraph-container {
+    padding: 25px;
+  }
+}

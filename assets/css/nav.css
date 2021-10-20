@@ -1,0 +1,215 @@
+/* NAV */
+
+/* Nav container */
+nav {
+  padding-right: 20px;
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: var(--dark-green);
+  color: var(--white);
+  position: fixed;
+  z-index: 3;
+}
+
+/* Nav logo styles */
+nav .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 20px;
+  height: 8vh;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+nav .nav-logo img {
+  height: 8vh;
+}
+nav .nav-logo h1 {
+  font-size: 2rem;
+  margin-left: 10px;
+  color: var(--white);
+}
+nav .nav-logo:hover {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+/* Flag icon styles */
+nav .links .flag-icon {
+  height: 3vh;
+  width: 3vh;
+  border: 2px solid white;
+  border-radius: 50%;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+nav .links .flag-icon:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+/* Nav link styles */
+nav .links {
+  max-width: 450px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+nav a {
+  z-index: 3;
+}
+nav .link a {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  position: relative;
+}
+nav .link a:before,
+nav .link a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0px;
+  height: 3px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  background-color: var(--white);
+}
+nav .link a:before {
+  left: 50%;
+}
+nav .link a:after {
+  right: 50%;
+}
+nav .link:hover {
+  cursor: pointer;
+}
+nav .link:hover a:before,
+nav .link:hover a:after,
+nav .link .active:before,
+nav .link .active:after {
+  opacity: 1;
+}
+nav .link:hover a:before,
+nav .link:hover a:after,
+nav .link .active:before,
+nav .link .active:after {
+  width: 50%;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+  nav .links {
+    position: fixed;
+    top: 0;
+    background: var(--dark-green);
+    height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    z-index: 2;
+  }
+  nav .open {
+    clip-path: circle(150vh at 90% -10%);
+    -webkit-clip-path: circle(150vh at 90% -10%);
+    pointer-events: all;
+  }
+
+  nav .links .flag-icon {
+    height: 7vh;
+    width: 7vh;
+  }
+
+  nav .links .link {
+    z-index: 2;
+    opacity: 0;
+  }
+  nav .links .link a {
+    font-size: 1.75rem;
+  }
+
+  /* fade in each nav link one by one */
+  nav .links .link:nth-child(1) {
+    -webkit-transition: all 0.5s ease-in 0.2s;
+    -o-transition: all 0.5s ease-in 0.2s;
+    transition: all 0.5s ease-in 0.2s;
+  }
+  nav .links .link:nth-child(2) {
+    -webkit-transition: all 0.5s ease-in 0.4s;
+    -o-transition: all 0.5s ease-in 0.4s;
+    transition: all 0.5s ease-in 0.4s;
+  }
+  nav .links .link:nth-child(3) {
+    -webkit-transition: all 0.5s ease-in 0.6s;
+    -o-transition: all 0.5s ease-in 0.6s;
+    transition: all 0.5s ease-in 0.6s;
+  }
+
+  /* fade in the flag icon */
+  nav .links .flag-icon {
+    z-index: 2;
+    opacity: 0;
+
+    -webkit-transition: all 0.5s ease-in 0.8s;
+    -o-transition: all 0.5s ease-in 0.8s;
+    transition: all 0.5s ease-in 0.8s;
+  }
+
+  nav .links .fade {
+    opacity: 1;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 2;
+    height: 5vh;
+    cursor: pointer;
+  }
+}

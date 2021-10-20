@@ -1,0 +1,63 @@
+/* INFO BOXES */
+
+/* Main container */
+.info-box-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1010px;
+}
+
+/* Info box container */
+.info-box-w-img {
+  border: 3px solid var(--light-green);
+  margin: 3px;
+  width: 175px;
+  height: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Info box image */
+.info-box-w-img img {
+  height: 60px;
+  width: 60px;
+}
+
+/* Info box text */
+.info-box-w-img p {
+  text-align: center;
+  padding: 10px 4px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .info-box-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

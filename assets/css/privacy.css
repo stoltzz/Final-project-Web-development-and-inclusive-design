@@ -1,0 +1,54 @@
+/* PRIVACY PAGE */
+
+/* Main section container */
+.privacy-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 10vh; /* offset the fixed navbar */
+}
+
+/* Main title */
+.privacy-container h2 {
+  padding-top: 50px;
+  text-align: left;
+  color: var(--dark-green);
+}
+
+/* Subtitle */
+.privacy-container .text .subtitle {
+  font-weight: bold;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  color: var(--dark-green);
+}
+
+/* Text content */
+.privacy-container .text {
+  padding: 50px;
+  padding-bottom: 50px;
+  line-height: 30px;
+  max-width: 700px;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+  .privacy-container h2 {
+    padding-top: 25px;
+  }
+
+  .privacy-container .text {
+    padding: 25px;
+    padding-bottom: 25px;
+  }
+}
